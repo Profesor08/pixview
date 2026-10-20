@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.10.0.schema.json
+
+PackageIdentifier: Profesor08.PixView
+PackageVersion: 1.0.0
+PackageLocale: en-US
+Publisher: Profesor08
+PublisherUrl: https://github.com/Profesor08
+PublisherSupportUrl: https://github.com/Profesor08/pixview/issues
+Author: Profesor08
+PackageName: PixView
+PackageUrl: https://github.com/Profesor08/pixview
+License: GPL-3.0-or-later
+LicenseUrl: https://github.com/Profesor08/pixview/blob/main/LICENSE
+Copyright: Copyright © 2026 Profesor08
+ShortDescription: Lightweight image viewer in the spirit of Picasa Photo Viewer.
+Description: |-
+  PixView is a fast, lightweight image viewer for Windows 10 and 11 in the spirit of Picasa Photo Viewer: viewing only, no editing.
+  It opens photos over a dimmed desktop, with a filmstrip, zoom and full screen mode.
+  Supports JPG, PNG, GIF and APNG (animated), WebP, HEIC/HEIF, AVIF, JPEG XL, TIFF (multi-page), camera RAW, TGA, QOI, HDR, ICNS, EMF/WMF and more.
+  A single exe with no dependencies; the UI is available in 13 languages.
+Moniker: pixview
+Tags:
+- avif
+- heic
+- image-viewer
+- jxl
+- photo-viewer
+- photos
+- picasa
+- raw
+- viewer
+- webp
+ReleaseNotesUrl: https://github.com/Profesor08/pixview/releases/tag/v1.0.0
+ManifestType: defaultLocale
+ManifestVersion: 1.10.0
