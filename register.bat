@@ -1,0 +1,1 @@
+bin\PixView.exe --register
