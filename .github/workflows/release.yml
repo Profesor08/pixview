@@ -36,6 +36,8 @@ jobs:
         with:
           files: bin/PixView.exe
           body: |
-            Download `PixView.exe` and run it; no installation needed. Requires Windows 10 or 11.
+            Fast, tiny photo viewer for Windows 10 and 11 in the spirit of Picasa Photo Viewer. Opens HEIC, AVIF, WebP, JPEG XL, camera RAW, animated GIF/APNG and 35+ other formats.
+
+            **Download `PixView.exe` below and run it** — no installation, no admin rights. Or: `winget install Profesor08.PixView`
 
             SHA256: `${{ steps.sum.outputs.sha256 }}`
