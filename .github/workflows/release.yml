@@ -1,0 +1,41 @@
+# Pushing a tag like v1.0.0 builds PixView.exe and publishes it as a GitHub release.
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build
+        shell: pwsh
+        run: ./build.ps1
+
+      - name: Check version
+        shell: pwsh
+        run: |
+          $tag = '${{ github.ref_name }}'.TrimStart('v')
+          $file = (Get-Item bin/PixView.exe).VersionInfo.FileVersion
+          if (-not $file.StartsWith($tag)) { throw "Tag $tag does not match AssemblyFileVersion $file in src/AssemblyInfo.cs" }
+
+      - name: Checksum
+        id: sum
+        shell: pwsh
+        run: |
+          $hash = (Get-FileHash bin/PixView.exe -Algorithm SHA256).Hash
+          "sha256=$hash" >> $env:GITHUB_OUTPUT
+
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: bin/PixView.exe
+          body: |
+            Download `PixView.exe` and run it; no installation needed. Requires Windows 10 or 11.
+
+            SHA256: `${{ steps.sum.outputs.sha256 }}`
