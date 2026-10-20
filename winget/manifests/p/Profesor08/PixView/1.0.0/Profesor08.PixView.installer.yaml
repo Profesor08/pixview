@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.10.0.schema.json
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
 
 PackageIdentifier: Profesor08.PixView
 PackageVersion: 1.0.0
@@ -12,4 +12,4 @@ Installers:
   InstallerUrl: https://github.com/Profesor08/pixview/releases/download/v1.0.0/PixView.exe
   InstallerSha256: 13424E2E621A6B00AE19EDEF112BF767493E564671E4F23C12889949E2ED98F3
 ManifestType: installer
-ManifestVersion: 1.10.0
+ManifestVersion: 1.12.0

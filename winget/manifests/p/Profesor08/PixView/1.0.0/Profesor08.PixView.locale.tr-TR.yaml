@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.10.0.schema.json
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
 
 PackageIdentifier: Profesor08.PixView
 PackageVersion: 1.0.0
@@ -36,4 +36,4 @@ Tags:
 - jpeg-xl
 - raw
 ManifestType: locale
-ManifestVersion: 1.10.0
+ManifestVersion: 1.12.0
