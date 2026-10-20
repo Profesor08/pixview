@@ -11,6 +11,8 @@ PixView is a free, open-source image viewer for Windows 10 and 11: a single ~300
 
 **[⬇ Download PixView.exe](https://github.com/Profesor08/pixview/releases/latest/download/PixView.exe)** — no installation needed.
 
+![PixView showing a photo over the dimmed desktop, with the folder's filmstrip below](docs/screenshot.jpg)
+
 ## Why PixView
 
 - **Opens in a blink.** A tiny native exe: no Electron, no runtime to download, no splash screen.
@@ -25,6 +27,8 @@ PixView is a free, open-source image viewer for Windows 10 and 11: a single ~300
 - **Private and portable:** works offline, sends nothing anywhere, needs no admin rights.
 
 A lightweight alternative to Windows Photo Viewer and the Photos app.
+
+![The details panel (I) with EXIF data: camera, date taken, exposure, aperture, ISO, focal length](docs/screenshot-details.jpg)
 
 ## Install
 
