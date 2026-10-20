@@ -69,3 +69,9 @@ Limitations: animated AVIF with 10/12 bits per channel shows only its first fram
 | Show in folder | Ctrl+E |
 | Open file | Ctrl+O |
 | Close | Esc; in full screen also a click beside the photo (with the details panel open, that click closes only the panel) |
+
+## License
+
+Copyright © 2026 Profesor08
+
+PixView is free software: you can redistribute it and/or modify it under the terms of the [GNU General Public License v3.0](LICENSE) or (at your option) any later version. It comes with no warranty.
